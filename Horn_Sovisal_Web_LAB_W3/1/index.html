@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Create Account Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Create Account</h2>
+      <form action="#">
+        <div class="form-group inline">
+          <div>
+            <label for="firstName">First name *</label> <br />
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Enter your first name"
+            />
+          </div>
+          <div>
+            <label for="lastName">Last name</label> <br />
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Enter your last name"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="form-group inline">
+          <div>
+            <label for="password">Password *</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div>
+            <label for="confirmPassword">Confirm Password *</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Enter password again"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Gender:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" /> Male</label>
+            <label><input type="radio" name="gender" /> Female</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Hobbies:</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" /> Music</label>
+            <label><input type="checkbox" /> Sports</label>
+            <label><input type="checkbox" /> Travel</label>
+            <label><input type="checkbox" /> Movies</label>
+          </div>
+        </div>
+
+        <div class="form-group inline">
+          <div>
+            <label for="source">Source of Income</label>
+            <select id="source">
+              <option>Employed</option>
+              <option>Unemployed</option>
+              <option>Student</option>
+            </select>
+          </div>
+          <div>
+            <label for="income">Income</label>
+            <input type="range" id="income" min="0" max="100" value="20" />
+            <span class="income-value">20K</span>
+          </div>
+        </div>
+
+        <div class="form-group inline">
+          <div>
+            <label for="profile">Upload Profile Picture</label>
+            <input type="file" id="profile" />
+          </div>
+          <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" value="18" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="bio">Bio</label>
+          <textarea
+            id="bio"
+            placeholder="Write something about yourself..."
+          ></textarea>
+        </div>
+
+        <button type="submit">Create</button>
+      </form>
+    </div>
+  </body>
+</html>
