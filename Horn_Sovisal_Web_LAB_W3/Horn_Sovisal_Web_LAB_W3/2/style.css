@@ -1,0 +1,37 @@
+.container {
+  background-color: black;
+  padding: 30px 40px;
+  margin-top: 200px;
+  border-radius: 10px;
+  width: 1000px;
+  height: 600px;
+  display: grid;
+  gap: 20px;
+}
+.item {
+  background: #2196f3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a {
+  grid-column: span 3;
+}
+.b {
+  grid-row: span 2;
+}
+.c {
+  grid-column: span 1;
+}
+.d {
+  grid-column: span 1;
+}
+.e {
+  grid-column: span 2;
+}
+
+.f {
+  grid-column: span 3;
+}

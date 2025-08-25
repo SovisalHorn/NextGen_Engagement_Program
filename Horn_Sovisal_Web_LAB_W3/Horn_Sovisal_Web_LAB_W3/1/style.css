@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins";
+  background-color: #e0e4e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form container */
+.form-container {
+  background-color: #f8f9fa;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+/* Form heading */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form fields layout */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 400px;
+}
+
+.form-group.inline {
+  flex-direction: row;
+  gap: 30px;
+}
+
+.form-group.inline input,
+.form-group.inline select {
+  width: 48%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2e8b57; /* green labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  padding: 8px 10px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+/* Checkbox & radio layout */
+.checkbox-group,
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2e8b57;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
